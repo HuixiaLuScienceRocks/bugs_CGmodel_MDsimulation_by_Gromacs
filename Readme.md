@@ -1,4 +1,4 @@
-### This repository is for investigators who suffer facing bugs while running MD simulations using coarse-grained models.
+### This repository is for investigators who suffer facing bugs/errors while running MD simulations by gromacs using coarse-grained models.
 
 ## Example 1
 Using Charmmgui constructed protein solvated in salty simulation box (Martini3 force field). Using VMD TKConsol checked the whole system's net charge = 0, after loading step3*.psf + step3*.pdb. However, when running MD using gromacs, fatal error is encountered while generating step4.0*tpr:
