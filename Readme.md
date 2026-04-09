@@ -126,7 +126,7 @@ Then the "gmx_mpi grompp ... ... " will be able to generate the xxx.tpr file wit
 
 #### https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/installation/
  
-1. In conda environment, creating a env.yml file in our working directory:
+1. In conda environment, creating a **env.yml** file in our working directory:
 
 name: gmxMMPBSA
 channels:
