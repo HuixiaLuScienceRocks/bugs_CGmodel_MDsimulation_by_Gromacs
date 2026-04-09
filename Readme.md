@@ -154,11 +154,14 @@ dependencies:
       - pyqt6==6.7.1
 ```
 2. run the following commands:
+   ```
    conda env create --file env.yml
+   
    conda activate gmxMMPBSA
-3. Installing gmx_MMPBSA:
-   (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ pip install gmx_MMPBSA
-4. test: (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ gmx_MMPBSA -h
+   ```
+4. Installing gmx_MMPBSA:
+   (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ **pip install gmx_MMPBSA**
+5. test: (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ gmx_MMPBSA -h
 [INFO   ] Starting gmx_MMPBSA 1.6.4
 [INFO   ] Command-line
   gmx_MMPBSA -h
