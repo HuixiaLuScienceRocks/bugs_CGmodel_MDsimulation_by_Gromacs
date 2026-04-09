@@ -120,4 +120,55 @@ CLA   	         367
 Then the "gmx_mpi grompp ... ... " will be able to generate the xxx.tpr file without fatal error.
 
 ---------------------------------------------------------------------------------------------------------
+# Update (10 Abril 2026)
+
+##  Installing gmx_MMPBSA for binding energy calculation
+
+#### https://valdes-tresanco-ms.github.io/gmx_MMPBSA/dev/installation/
+ 
+1. In conda environment, creating a env.yml file in our working directory:
+
+name: gmxMMPBSA
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11.8
+  - pip
+  - numpy=1.26.4
+  - ambertools=23.6
+  - mpi4py=4.0.1
+  - matplotlib=3.7.3
+  - scipy=1.14.1
+  - parmed=4.2.2
+
+
+  - pandas=1.5.3
+  - seaborn=0.11.2
+  - tqdm
+
+  - git
+  - gromacs<=2024.3
+  - pip:
+      - pyqt6==6.7.1
+
+2. run the following commands:
+   conda env create --file env.yml
+   conda activate gmxMMPBSA
+3. Installing gmx_MMPBSA:
+   (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ pip install gmx_MMPBSA
+4. test: (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ gmx_MMPBSA -h
+[INFO   ] Starting gmx_MMPBSA 1.6.4
+[INFO   ] Command-line
+  gmx_MMPBSA -h
+
+usage: gmx_MMPBSA [-h] [-v] [--input-file-help] [--create_input [{gb,pb,rism,ala,decomp,nmode,gbnsr6,all} ...]] [-O]
+                  [-prefix <file prefix>] [-i FILE] [-xvvfile XVVFILE] [-o FILE] [-do FILE] [-eo FILE] [-deo FILE]
+                  [-nogui] [-s] [-cs <Structure File>] [-ci <Index File>] [-cg index index] [-ct [TRJ ...]]
+                  [-cp <Topology>] [-cr <PDB File>] [-rs <Structure File>] [-ri <Index File>] [-rg index] [-rt [TRJ ...]]
+                  [-rp <Topology>] [-lm <Structure File>] [-ls <Structure File>] [-li <Index File>] [-lg index]
+                  [-lt [TRJ ...]] [-lp <Topology>] [--rewrite-output] [--clean]
+
+### DONE!!!!
+------------------------------------------------------------------------------------------------------------
 ### To be continued... ...
