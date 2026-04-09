@@ -161,7 +161,8 @@ dependencies:
    ```
 4. Installing gmx_MMPBSA:
    (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ **pip install gmx_MMPBSA**
-5. test: (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ gmx_MMPBSA -h
+5. test: (gmxMMPBSA) hlu@ryzen7-9800x3d:~$ **gmx_MMPBSA -h**
+   
 [INFO   ] Starting gmx_MMPBSA 1.6.4
 [INFO   ] Command-line
   gmx_MMPBSA -h
