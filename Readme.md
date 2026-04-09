@@ -128,6 +128,7 @@ Then the "gmx_mpi grompp ... ... " will be able to generate the xxx.tpr file wit
  
 1. In conda environment, creating a **env.yml** file in our working directory:
 
+```
 name: gmxMMPBSA
 channels:
   - defaults
@@ -151,7 +152,7 @@ dependencies:
   - gromacs<=2024.3
   - pip:
       - pyqt6==6.7.1
-
+```
 2. run the following commands:
    conda env create --file env.yml
    conda activate gmxMMPBSA
